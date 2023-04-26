@@ -1,14 +1,15 @@
-.App {
-  padding: 50px;
-}
+/* .App {
+  text-align: center;
+} */
 
 .square {
   margin: 0;
   height: 75px;
   width: 75px;
+  align-items: center;
 }
-.board-row {
-  margin: 0;
+.board-row {height: 75px;
+  align-items: center;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
