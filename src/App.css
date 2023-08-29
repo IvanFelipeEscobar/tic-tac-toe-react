@@ -1,15 +1,21 @@
-/* .App {
-  text-align: center;
-} */
-
+.board {
+  width: 30rem;
+  height: 30rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
 .square {
   margin: 0;
-  height: 75px;
-  width: 75px;
+  height: 10rem;
+  width: 10rem;
   align-items: center;
 }
-.board-row {height: 75px;
+.board-row {
   align-items: center;
+}
+button {
+  font-size: 6rem;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {
