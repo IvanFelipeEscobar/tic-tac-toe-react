@@ -1,11 +1,16 @@
 import { useState } from "react";
 import Square from "./Square";
 const Board = () => {
+    const [xNext, setXNext ] = useState(true)
     const [squares, setSquares] = useState(Array(9).fill(null))
     function handleClick(i) {
         const nextSquares = squares.slice();
-        nextSquares[i] = "X";
+        xNext
+            ? nextSquares[i] = "X"
+            : nextSquares[i] = "O"
+
         setSquares(nextSquares);
+        setXNext(!xNext)
       }
     
   return (
